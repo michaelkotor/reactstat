@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 
 @Repository
 public class RedisRepositoryImpl implements RedisRepository {
-    private final RedisClient client = RedisClient.create("redis://localhost");
+    private final RedisClient client = RedisClient.create("redis://redis");
     private final RedisAsyncCommands<String, String> commands = client.connect().async();
 
     public List<Event> findAll() {

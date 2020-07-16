@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
 
 import javax.annotation.PostConstruct;
-import java.util.UUID;
 
 @Component
 public class EventLoader {
